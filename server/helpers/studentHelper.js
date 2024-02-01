@@ -33,7 +33,7 @@ const addStudent = async (dataObject) => {
   const { lecturer_id, fullname, nickname } = dataObject;
   const result = await db.student.create({ lecturer_id, fullname, nickname });
 
-  return Promise.resolve({ message: "tes", result });
+  return Promise.resolve({ message: "Add data success", result });
 };
 
 const updateStudent = async (dataObject) => {
